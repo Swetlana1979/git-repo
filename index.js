@@ -3,11 +3,7 @@ import cors from 'cors';
 
 const app = express();
 app.use(cors());
-app.get('/', (req, res) => {
-  res.json({
-    hello: 'JS World',
-  });
-});
+
 
 app.get('/2A',(reg,res) => {
 	const sum = (+reg.query.a||0) + (+reg.query.b||0);
